@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <title>.:: AGENDA ::.</title>
+</head>
+<body>
+    <button type="button" class="btn btn-success m-5" onclick="addContact()">Nuovo Contatto</button>  
+    <div class="container d-flex justify-content-center shadow-lg p-3 mb-5 bg-body rounded">
+        <div id="tableContactsDiv">
+            <h1>
+                TABELLA CONTATTI
+            </h1>
+        </div>  
+    </div>
+    <div id="formContainer" class="container d-none mb-5" style>
+        <div id="edit_persona">
+            <div class="container d-flex justify-content-center">
+                <h3>
+                    FORM CONTATTO
+               </h3>
+            </div>
+        </div>
+        <div class="container justify-content-center">
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingName" placeholder="Nome">
+                <label for="floatingName">Nome</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingSurname" placeholder="Cognome">
+                <label for="floatingSurname">Cognome</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingEmail" placeholder="Email">
+                <label for="floatingEmail">Email</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="tel" class="form-control" id="floatingPhone" placeholder="Telefono">
+                <label for="floatingPhone">Telefono</label>
+            </div>
+    
+            <input id="submitButton" class="btn btn-primary" type="submit" value="Aggiungi">
+    
+        </div>        
+    </div>
+    <script src="main.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+</body>
+</html>
